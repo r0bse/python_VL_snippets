@@ -1,6 +1,6 @@
-from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import relationship, sessionmaker, Session
+from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
 
@@ -16,7 +16,7 @@ class User(SqlAlchemyBase):
     def __init__(self,  name: str):
         self.name = name
 
-    def __str__(self):
+    def __repr__(self):
         return "User [id: {0}, name: {1}]".format(self.id, self.name)
 
 if __name__ == "__main__":
@@ -25,3 +25,4 @@ if __name__ == "__main__":
     SqlAlchemyBase.metadata.create_all(engine)
     Session = sessionmaker(engine)
     session = Session()
+
