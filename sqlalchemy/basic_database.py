@@ -26,3 +26,7 @@ if __name__ == "__main__":
     Session = sessionmaker(engine)
     session = Session()
 
+    user = User("Batman")
+    session.add(user)
+    session.commit()
+
