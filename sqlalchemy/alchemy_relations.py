@@ -45,7 +45,8 @@ def manage_relations_manually():
     session.add(email)
     # session.commit() # relation wurde nicht gesetzt
 
-    user.emails = [email] # relationship erwartet eine Liste
+    email_list = [email]
+    user.emails = email_list # relationship erwartet eine Liste
     session.commit() # relation wurde gesetzt
 
 
