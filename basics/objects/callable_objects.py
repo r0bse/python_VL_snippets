@@ -1,5 +1,6 @@
 
 class Callable:
+    """Example class on how to make an object callable by a function"""
 
     def __init__(self):
         pass

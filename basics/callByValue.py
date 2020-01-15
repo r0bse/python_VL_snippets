@@ -3,6 +3,7 @@ int = 10
 print("in int, beginn: ", int)
 
 def call_by_value(int, int_in_fkt = 0):
+    """how call by value works in python"""
     print("in int, davor: ", int)
     print("in int_in_fkt, davor: ", int_in_fkt)
     int_in_fkt = int_in_fkt + int_in_fkt

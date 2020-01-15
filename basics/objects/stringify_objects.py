@@ -1,5 +1,6 @@
 
 class Stringify:
+    """Example class on how to modify the String representation of an object"""
 
     name = ""
 
