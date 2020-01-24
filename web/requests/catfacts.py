@@ -1,6 +1,7 @@
 import json
 import requests
 
+# api documentaion: https://alexwohlbruck.github.io/cat-facts/docs/
 
 def print_random_fact(animal_type:str):
     response = requests.get("https://cat-fact.herokuapp.com/facts/random?animal_type="+animal_type+"&amount=1")

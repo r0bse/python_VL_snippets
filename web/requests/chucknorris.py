@@ -1,6 +1,7 @@
 import json
 import requests
 
+# api documentaion: http://www.icndb.com/api/
 
 def print_random_joke():
     response = requests.get("http://api.icndb.com/jokes/random")
