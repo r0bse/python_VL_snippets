@@ -8,7 +8,7 @@ def hello_flask():
 
 @app.route("/hello")
 def hello_world():
-    return "Hello World!"
+    return "hello"
 
 if __name__ == "__main__":
 
