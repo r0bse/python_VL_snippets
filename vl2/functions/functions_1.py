@@ -1,5 +1,5 @@
 
-def age_verification(age=0, age_to_be_allowed_to_drink=18):
+def age_verification(age, age_to_be_allowed_to_drink):
     return age >= age_to_be_allowed_to_drink
 
 
