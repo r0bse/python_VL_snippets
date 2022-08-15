@@ -338,3 +338,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# SQL-Alchemy databases
+*.db

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{ title }}</h2>
+    <form action="{{ post_url }}" method="POST">
+        <table>
+            <tr>
+                <td>{{ form.username.label }} {{ form.username }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.email.label }} {{ form.email }}</td>
+            </tr>
+            <tr>
+                <td>{{ form.rules_accepted.label }} {{ form.rules_accepted }}</td>
+            </tr>
+        </table>
+        <p><input value='submit' type='SUBMIT'></p>
+    </form>
+{% endblock %}

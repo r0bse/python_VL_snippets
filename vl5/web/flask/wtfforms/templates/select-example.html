@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ title }}</h2>
+    <form action="{{ post_url }}" method="POST">
+        {{ form.select_field.label }} {{ form.select_field() }}
+        <p><input value='submit' type='SUBMIT'></p>
+    </form>
+{% endblock %}

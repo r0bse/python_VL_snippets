@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ title }}</h2>
+    <form name="Covid Ticker" method="POST">
+        <select name="selected_region">
+            {% for region in regions %}
+                <option value="{{ region[0] }}">{{ region[1] }}</option>
+            {% endfor %}
+        </select>
+        <p><input value='Get Covid Data' type='SUBMIT'></p>
+    </form>
+{% endblock %}

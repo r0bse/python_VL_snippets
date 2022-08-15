@@ -1,0 +1,13 @@
+pyyaml
+pytest
+pytest-cov
+sqlalchemy~=1.4.40
+flask~=2.2.2
+flask-sqlalchemy
+wtforms~=3.0.1
+flask-wtf
+email_validator
+passlib~=1.7.4
+
+requests~=2.28.1
+Werkzeug~=2.2.2
