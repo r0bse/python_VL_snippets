@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
     <h2>{{ title }}</h2>
-    <form action="{{ post_url }}" method="POST">
+    <form method="POST">
         <table>
             <tr>
                 <td>{{ form.username.label }} {{ form.username }}</td>

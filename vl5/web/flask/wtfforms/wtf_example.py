@@ -5,7 +5,7 @@ import requests as requests
 
 from flask import Flask, render_template, request, redirect, flash, url_for
 from flask_wtf import FlaskForm
-from wtforms import Form, StringField, BooleanField, validators, SelectField
+from wtforms import StringField, BooleanField, validators, SelectField
 
 
 class RegistrationForm(FlaskForm):
