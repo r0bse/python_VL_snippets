@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     response = requests.request("get", url).json()
     df = DataFrame(response["index"])
-
     # Show dataframe
     print(df)
-
+    print(df.info())
+    print(df.tail())

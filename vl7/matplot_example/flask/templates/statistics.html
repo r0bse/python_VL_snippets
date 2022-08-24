@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
 {% block body %}
 <h2>Statistics Example</h2>
-<img src={{img_path}}/>
+    <img src='{{ url_for("static", filename="") }}/{{filename}}'/>
 {% endblock %}

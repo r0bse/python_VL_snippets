@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import matplotlib.pyplot as plt
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -19,6 +20,20 @@ def hello_plot():
 
     return render_template("statistics.html", img_path=path)
 
+@app.route("/covid/pandas")
+def covid():
+
+    df = pd.read_csv('static/covid_berlin.csv', sep=';', decimal=',')
+    plt.bar(df["datum"], df["7_tage_hosp_inzidenz"], label="7 Tage Incidenz", color="#00cc00")
+
+    plt.legend()
+    plt.xlabel('7 Tage Inzidenz')
+    plt.ylabel('Datum')
+    plt.title('Covid / Tage Inzidenz Graph')
+
+    filename = "covid.png" # speichert die Datei im Projektordner!
+    plt.savefig("static/"+filename)
+    return render_template("statistics.html", filename=filename)
 
 if __name__ == "__main__":
 

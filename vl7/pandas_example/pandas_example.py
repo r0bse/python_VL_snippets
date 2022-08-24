@@ -12,3 +12,7 @@ if __name__ == "__main__":
 
     # Printing dataframe
     print(df)
+
+    #refer to the row index:
+    print(df.loc[0])
+    df.drop('column_name', axis=1, inplace=True)
