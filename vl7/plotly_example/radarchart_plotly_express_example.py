@@ -1,5 +1,6 @@
 import plotly.express as px
 import pandas as pd
+
 covid_data = pd.read_csv('flask/static/covid_berlin.csv',
                          sep=';',
                          decimal=',',
