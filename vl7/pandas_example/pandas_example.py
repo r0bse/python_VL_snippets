@@ -3,16 +3,16 @@ import pandas as pd
 
 if __name__ == "__main__":
 
-    # Creating and initializing a nested list
-    age = [['Aman', 95.5, "Male"], ['Sunny', 65.7, "Female"],
-         ['Monty', 85.1, "Male"], ['toni', 75.4, "Male"]]
+    data = {
+        "name": ["Sally", "Mary", "John"],
+        "age": [50, 40, 30],
+        "qualified": [True, False, False]
+    }
 
-    # Creating a pandas dataframe
-    df = pd.DataFrame(age, columns=['Name', 'Marks', 'Gender'])
+    df = pd.DataFrame(data)
 
-    # Printing dataframe
     print(df)
 
-    #refer to the row index:
-    print(df.loc[0])
-    df.drop('column_name', axis=1, inplace=True)
+    newdf = df.drop("age", axis='columns')
+
+    print(newdf)

@@ -1,5 +1,6 @@
 import getpass
 
-password = getpass.getpass()
-print(password)
+if __name__ == "__main__":
 
+    password = getpass.getpass("foo")
+    print(password)
