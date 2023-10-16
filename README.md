@@ -1,2 +1,2 @@
 # python_VL_snippets
-Paython snippets die im Rahmen der Vorlesung "Vertiefung Programmierung" verwendet werden.
+Python snippets die im Rahmen der Vorlesung "Vertiefung Programmierung" im Studiengang "Umweltinformatik" der HTW verwendet werden.
