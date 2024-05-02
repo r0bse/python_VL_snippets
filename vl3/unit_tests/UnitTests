@@ -1,0 +1,21 @@
+import unittest
+
+class Foo:
+    def __init__(self):
+        self.value = True
+
+
+class Bar:
+    def __init__(self):
+        self.value = False
+
+
+class MyTestCase(unittest.TestCase):
+
+    def test_Foo(self):
+        foo = Foo()
+        self.assertTrue(foo.value)
+
+    def test_Bar(self):
+        bar = Bar()
+        self.assertTrue(bar.value)
