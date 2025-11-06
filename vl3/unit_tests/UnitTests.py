@@ -18,4 +18,4 @@ class MyTestCase(unittest.TestCase):
 
     def test_Bar(self):
         bar = Bar()
-        self.assertTrue(bar.value)
+        self.assertIsInstance(bar.value, "das hier steht dann da wenn der Test umfällt")
