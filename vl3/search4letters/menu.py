@@ -1,7 +1,7 @@
 import sys
 
-from search4letters.SetToStringParser import SetToStringParser
-from search4letters.searchForLetters import Search4Letters
+from vl3.search4letters.SetToStringParser import SetToStringParser
+from vl3.search4letters.searchForLetters import Search4Letters
 
 
 class Menu:

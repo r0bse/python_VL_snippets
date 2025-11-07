@@ -1,4 +1,4 @@
-from search4letters.menu import Menu
+from vl3.search4letters.menu import Menu
 
 
 def start():
